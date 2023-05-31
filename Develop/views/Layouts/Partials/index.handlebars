@@ -1,0 +1,19 @@
+<div id="recipe-response-box"></div>
+
+<!-- Handlebars template -->
+<script id="recipe-template" type="text/x-handlebars-template">
+  <div class="recipe-output">
+    <h2 class="recipe-title">{{title}}</h2>
+    <div class="recipe-instructions">
+      <h3>Instructions:</h3>
+      <ol>
+        {{#each instructions}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ol>
+    </div>
+    <div class="recipe-picture">
+      <img src="{{picture}}" alt="Recipe Picture">
+    </div>
+  </div>
+</script>
