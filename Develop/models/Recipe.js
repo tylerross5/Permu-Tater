@@ -34,6 +34,11 @@ const Recipe = sequelize.define('Recipe', {
   strYoutube: {
     type: DataTypes.STRING,
     allowNull: true
+  },
+  ingredients: {
+    type: DataTypes.JSON,
+    allowNull: false,
+    defaultValue: []
   }
 });
 
