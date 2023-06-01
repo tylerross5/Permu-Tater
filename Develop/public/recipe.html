@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Generator</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Recipe Generator</h1>
+  <button id="generateRecipeBtn">Permu-Tate!</button>
+  <div id="recipeContainer"></div>
+
+  <script>
+    $(document).ready(function() {
+      // Attach a click event listener to the "Generate Recipe" button
+      $('#generateRecipeBtn').on('click', function() {
+        // Make an AJAX request to the backend server
+        $.ajax({
+          url: '/recipes',
+          method: 'GET',
+          dataType: 'json',
+          success: function(data) {
+            // Handle the response data and update the HTML content
+            $('#recipeContainer').html(`
+              <h2>${data.strMeal}</h2>
+              <p>Category: ${data.strCategory}</p>
+              <p>Area: ${data.strArea}</p>
+              <p>Instructions: ${data.strInstructions}</p>
+              <img src="${data.strMealThumb}" alt="${data.strMeal}">
+              <p>Tags: ${data.strTags}</p>
+              <p>YouTube Video: <a href="${data.strYoutube}" target="_blank">${data.strMeal}</a></p>
+            `);
+          },
+          error: function(error) {
+            console.error('Failed to fetch random recipe:', error);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
