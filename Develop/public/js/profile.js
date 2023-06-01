@@ -3,10 +3,10 @@ const addNewRecipe= async (event) => {
 
     const name= document.querySelector('#recipe-idMeal').value.trim();
     const type= document.querySelector('recipes-Category');
-    const instrcutions=document.querySelector('recipes-Instructions');
+    const instructions=document.querySelector('recipes-Instructions');
     const picture= document.querySelector('recipes-MealThumb');
 
-    if(name && type && instrcutions && picture){
+    if(name && type && instructions && picture){
         const response = await fetch('/api/recipes', {
             method:'POST',
             body:JSON.stringify({name, type, instrcutions, picture}),
