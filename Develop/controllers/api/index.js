@@ -22,6 +22,36 @@ router.get('/recipes', async (req, res) => {
       strYoutube
     } = recipe;
 
+    // Store the ingredients in an array
+    const ingredients = [];
+    for (let i = 1; i <= 20; i++) {
+      const ingredientKey = `strIngredient${i}`;
+      const measureKey = `strMeasure${i}`;
+
+      if (recipe[ingredientKey]) {
+        ingredients.push({
+          ingredient: recipe[ingredientKey],
+          measure: recipe[measureKey],
+        });
+      }
+    }
+
+    // Delete the previous recipe from the database
+    await Recipe.destroy({ truncate: true });
+
+    // Create a new recipe entry in the database
+    await Recipe.create({
+      idMeal,
+      strMeal,
+      strCategory,
+      strArea,
+      strInstructions,
+      strMealThumb,
+      strTags,
+      strYoutube,
+      ingredients,
+    });
+
     // Send the recipe data as the response
     res.json({
       idMeal,
@@ -31,7 +61,8 @@ router.get('/recipes', async (req, res) => {
       strInstructions,
       strMealThumb,
       strTags,
-      strYoutube
+      strYoutube,
+      ingredients,
     });
   } catch (error) {
     console.error('Error retrieving random recipe data from the Free Meal API: ', error);
