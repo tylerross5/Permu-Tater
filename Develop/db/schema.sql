@@ -1,8 +1,10 @@
-DROP DATABASE IF EXISTS recipes_db;
-CREATE DATABASE recipes_db;
+DROP DATABASE IF EXISTS permutate_db;
+CREATE DATABASE permutate_db;
+
+USE permutate_db;
 
 CREATE TABLE meals (
-    idMeal VARCHAR(10),
+    idMeal INT PRIMARY KEY,
     strMeal VARCHAR(100),
     strDrinkAlternate VARCHAR(100),
     strCategory VARCHAR(100),
@@ -61,7 +63,7 @@ CREATE TABLE ingredients (
   meal_id INT,
   ingredient VARCHAR(100),
   measure VARCHAR(100),
-  FOREIGN KEY (meal_id) REFERENCES meals(id)
+  FOREIGN KEY (meal_id) REFERENCES meals(idMeal)
 );
 
 CREATE TABLE recipe_categories (
@@ -70,6 +72,21 @@ CREATE TABLE recipe_categories (
   cuisine_type VARCHAR(100),
   dietary_restrictions VARCHAR(100),
   meal_type VARCHAR(100),
-  FOREIGN KEY (recipe_id) REFERENCES recipes(id)
+  FOREIGN KEY (recipe_id) REFERENCES meals(idMeal)
 );
 
+CREATE TABLE Recipes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  idMeal INT,
+  strMeal VARCHAR(100),
+  strCategory VARCHAR(100),
+  strArea VARCHAR(100),
+  strInstructions TEXT,
+  strMealThumb VARCHAR(200),
+  strTags VARCHAR(100),
+  strYoutube VARCHAR(200),
+  ingredients TEXT,
+  createdAt DATETIME,
+  updatedAt DATETIME,
+  FOREIGN KEY (idMeal) REFERENCES meals(idMeal)
+);

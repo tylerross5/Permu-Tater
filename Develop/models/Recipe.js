@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-const Recipe = sequelize.define('Recipe', {
+const Recipes = sequelize.define('Recipes', {
   idMeal: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -25,7 +25,7 @@ const Recipe = sequelize.define('Recipe', {
   },
   strMealThumb: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   strTags: {
     type: DataTypes.STRING,
@@ -36,10 +36,9 @@ const Recipe = sequelize.define('Recipe', {
     allowNull: true
   },
   ingredients: {
-    type: DataTypes.JSON,
-    allowNull: false,
-    defaultValue: []
+    type: DataTypes.TEXT, 
+    allowNull: true
   }
 });
 
-module.exports = Recipe;
+module.exports = Recipes;
