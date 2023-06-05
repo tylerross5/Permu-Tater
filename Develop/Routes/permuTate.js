@@ -1,7 +1,3 @@
-const express = require('express');
-const app = express();
-
-
 
 /*
     Importing modules/dependencies
@@ -12,9 +8,16 @@ const sequelize = require('../config/connection'); // Connection to the Database
 const Recipe = require('../models/Recipe'); // Connection to the recipe model
 
 
+// Test query
+Recipe.findOne().then((recipe) => {
+    console.log('Fetched Recipe:', recipe);
+  }).catch((error) => {
+    console.log('Error:', error);
+  });
+  
 
 // Summoning the ingredient list
-const ingredientsData = fs.readFileSync('path/to/ingredients.json', 'utf8');
+const ingredientsData = fs.readFileSync('../db/ingredients.json', 'utf8');
 const ingredients = JSON.parse(ingredientsData).Ingredients;
  
 
@@ -26,6 +29,9 @@ function permuTate(recipe) {
      // Gets ingredients array from 
     // the recipe db object
     const dbIngredient = JSON.parse(recipe.ingredients);
+
+    // Log, it's log, it's big, it's heavy, it's wood.
+    console.log('Fetched Ingredients:', dbIngredient);
 
      // Ingredient replacement logic 
     // starts here
