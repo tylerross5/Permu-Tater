@@ -25,12 +25,36 @@ The following technologies were used to create our Permu-Tater project:
 
 ## Usage
 
+To use Permu-Tater, please follow the following steps: 
 
-![]()
-![]()
-![]()
-![]()
-![]()
+1. Navigate to (Website Link Once Deployed) in your web browser.
+2. You will be presented with the Permu-Tater Homepage with the option to generate a recipe randomly or with restrictions of your choice.
+3. Once you decide to add restrictions or just to go with a random recipe, click the Permu-Tate! button.
+4. Now you should have your recipe generated on the webpage.
+5. If you decide you want to generate a different receipe, simply click the Permu-Tate! button once again.
+6. If you wish to save the recipe you rendered, you will have to ceate an account by going to the Login option at the top right corner of the Navigation bar.
+
+![Homepage]()
+![Rendered Recipe]()
+
+Creating a Profile
+
+1. Once you have navigated to the Login screen, you will need to select the Sign Up option.
+2. You will then be presented with a form to input your email and password you wish to use for your profile.
+3. Click on the sign up button and you should be re-routed to the homepage while signed into your profile.
+
+![Sign Up Page]()
+![Login Page]()
+![Profile Page]()
+
+Saving a Recipe
+
+1. Make sure you are signed into your profile if you are not already by going to the Login option at the top right corner of the Navigation bar.
+2. Once you have rendered a recipe on the Homepage by clicking the Permu-Tate! button, you should see a white star on the right hand side.
+3. Simply click on the star to save the recipe. The star should be shaded in with the color Yellow to indicate the recipe is saved to your profile.
+
+![Recipe w/Unfilled Star]()
+![Recipe w/Filled in Star]()
 
 ## Features
 
