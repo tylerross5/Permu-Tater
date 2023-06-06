@@ -6,7 +6,7 @@ This webpage provides an interactive platform for finding interesting recipes ta
 
 ## Installation
 
-
+To use Permu-Tater, simply navigate to (Link)
 
 ## Building Blocks
 
