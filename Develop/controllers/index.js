@@ -4,7 +4,9 @@ const path = require('path');
 const Recipe = require('../models/Recipe');
 const sequelize = require('../config/connection');
 
-const router = express.Router();
+const router = express.Router(); 
+
+router.use(express.static('public'));
 
 // Serve the landing page and user login
 router.get('/', (req, res) => {

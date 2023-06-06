@@ -18,9 +18,7 @@ Recipe.findOne().then((recipe) => {
 
 // Summoning the ingredient list
 const ingredientsData = fs.readFileSync('../db/ingredients.json', 'utf8');
-const ingredients = JSON.parse(ingredientsData).Ingredients;
- 
-
+const ingredients = JSON.parse(ingredientsData).Ingredients; 
 
 /*
     Ingredient replacement function
