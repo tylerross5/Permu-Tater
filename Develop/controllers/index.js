@@ -1,8 +1,22 @@
 const express = require('express');
 const axios = require('axios');
+const path = require('path');
 const Recipe = require('../models/Recipe');
+const sequelize = require('../config/connection');
 
-const router = express.Router();
+const router = express.Router(); 
+
+router.use(express.static('public'));
+
+// Serve the landing page and user login
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'index.html'));
+});
+
+// Serve the recipe page
+router.get('/recipe', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'recipe.html'));
+}); 
 
 router.get('/recipes', async (req, res) => {
   try {
@@ -22,25 +36,20 @@ router.get('/recipes', async (req, res) => {
       strYoutube
     } = recipe;
 
-    // Store the ingredients in an array
+    // Extract the ingredients and their measurements
     const ingredients = [];
     for (let i = 1; i <= 20; i++) {
-      const ingredientKey = `strIngredient${i}`;
-      const measureKey = `strMeasure${i}`;
-
-      if (recipe[ingredientKey]) {
-        ingredients.push({
-          ingredient: recipe[ingredientKey],
-          measure: recipe[measureKey],
-        });
+      if (recipe[`strIngredient${i}`]) {
+        const ingredient = {
+          name: recipe[`strIngredient${i}`],
+          measurement: recipe[`strMeasure${i}`] || '' // Use an empty string if measurement is not provided
+        };
+        ingredients.push(ingredient);
       }
     }
 
-    // Delete the previous recipe from the database
-    await Recipe.destroy({ truncate: true });
-
-    // Create a new recipe entry in the database
-    await Recipe.create({
+    // Create a new recipe object
+    const newRecipe = {
       idMeal,
       strMeal,
       strCategory,
@@ -49,21 +58,14 @@ router.get('/recipes', async (req, res) => {
       strMealThumb,
       strTags,
       strYoutube,
-      ingredients,
-    });
+      ingredients: JSON.stringify(ingredients) // Convert ingredients array to a JSON string
+    };
+
+    // Save the recipe to the MySQL database using Sequelize
+    await Recipe.create(newRecipe);
 
     // Send the recipe data as the response
-    res.json({
-      idMeal,
-      strMeal,
-      strCategory,
-      strArea,
-      strInstructions,
-      strMealThumb,
-      strTags,
-      strYoutube,
-      ingredients,
-    });
+    res.json(newRecipe);
   } catch (error) {
     console.error('Error retrieving random recipe data from the Free Meal API: ', error);
     res.status(500).json({ error: 'Failed to retrieve random recipe data' });
