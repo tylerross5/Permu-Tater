@@ -118,7 +118,7 @@
 		{
 			"idIngredient": "29",
 			"strIngredient": "Black Pepper",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "30",
@@ -203,7 +203,7 @@
 		{
 			"idIngredient": "47",
 			"strIngredient": "Cardamom",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "49",
@@ -228,7 +228,7 @@
 		{
 			"idIngredient": "53",
 			"strIngredient": "Cayenne Pepper",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "54",
@@ -313,7 +313,7 @@
 		{
 			"idIngredient": "72",
 			"strIngredient": "Chili Powder",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "73",
@@ -328,7 +328,7 @@
 		{
 			"idIngredient": "75",
 			"strIngredient": "Chilli Powder",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "76",
@@ -373,17 +373,17 @@
 		{
 			"idIngredient": "84",
 			"strIngredient": "Cinnamon",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "85",
 			"strIngredient": "Cinnamon Stick",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "87",
 			"strIngredient": "Cloves",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "88",
@@ -468,17 +468,17 @@
 		{
 			"idIngredient": "104",
 			"strIngredient": "Cumin",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "105",
 			"strIngredient": "Cumin Seeds",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "106",
 			"strIngredient": "Curry Powder",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "107",
@@ -708,7 +708,7 @@
 		{
 			"idIngredient": "154",
 			"strIngredient": "Ginger",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "155",
@@ -758,7 +758,7 @@
 		{
 			"idIngredient": "165",
 			"strIngredient": "Green Chilli",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "166",
@@ -783,12 +783,12 @@
 		{
 			"idIngredient": "170",
 			"strIngredient": "Ground Cumin",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "171",
 			"strIngredient": "Ground Ginger",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "172",
@@ -848,7 +848,7 @@
 		{
 			"idIngredient": "184",
 			"strIngredient": "Jalapeno",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "185",
@@ -1083,7 +1083,7 @@
 		{
 			"idIngredient": "232",
 			"strIngredient": "Paprika",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "233",
@@ -2483,7 +2483,7 @@
 		{
 			"idIngredient": "526",
 			"strIngredient": "Sichuan Pepper",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "527",
@@ -2618,7 +2618,7 @@
 		{
 			"idIngredient": "556",
 			"strIngredient": "Ras el hanout",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "557",
@@ -2651,14 +2651,9 @@
 			"ingType": "Drink"
 		},
 		{
-			"idIngredient": "563",
-			"strIngredient": "Mixed Spice",
-			"ingType": "Spice"
-		},
-		{
 			"idIngredient": "564",
 			"strIngredient": "Mincemeat",
-			"ingType": "Spice"
+			"ingType": "Preserve"
 		},
 		{
 			"idIngredient": "565",
@@ -2818,7 +2813,7 @@
 		{
 			"idIngredient": "597",
 			"strIngredient": "Caraway Seed",
-			"ingType": "Spice"
+			"ingType": "Herb/Spice"
 		},
 		{
 			"idIngredient": "598",
