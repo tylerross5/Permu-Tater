@@ -4,16 +4,7 @@
 */
 const fs = require('fs');
 const { DataTypes } = require('sequelize'); // Our ORM
-const sequelize = require('../config/connection'); // Connection to the Database
 const Recipe = require('../models/Recipe'); // Connection to the recipe model
-
-
-// Test query
-Recipe.findOne().then((recipe) => {
-    console.log('Fetched Recipe:', recipe);
-  }).catch((error) => {
-    console.log('Error:', error);
-  });
   
 
 // Summoning the ingredient list
