@@ -1,8 +1,8 @@
 const express = require('express');
 const session = require('express-session');
-const routes = require('./controllers');
+const routes = require('./Develop/controllers');
 const path =require('path');
-const sequelize = require('./config/connection');
+const sequelize = require('./Develop/config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.static(path.join(__dirname, 'public')))
 
 const exphbs = require('express-handlebars');
-const helpers = require('./utils/helpers');
+const helpers = require('./Develop/utils/helpers');
 
 const hbs = exphbs.create({ helpers });
 
@@ -41,30 +41,3 @@ sequelize.sync({ force: false }).then(() => {
   });
 });
 
-// Set up routes for login and logout
-app.get('/', (req, res) => {
-  res.render('login');
-});
-
-app.post('/login', (req, res) => {
-  // Handle login logic here
-  res.send('Login successful!');
-});
-
-app.post('/logout', (req, res) => {
-  // Handle logout logic here
-  res.send('Logout successful!');
-});
-
-
-app.get('/signup', (req, res) => {
-  res.render('signup');
-});
-
-app.post('/signup', (req, res) => {
-  // Handle signup logic here
-  const { username, password } = req.body;
-  // Process the submitted data, e.g., save it to a database
-
-  res.send('Signup successful!');
-});
