@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/Develop/public/images/istockphoto-614844110-612x612.jpg" alt="Permu-Tater Logo">
+    </div>
+    <div class="user-area">
+      <a href="/Develop/public/js/login.js">Login</a>
+      <a href="/Develop/views/login.handlebars">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Navbar and Header -->
+  <nav class="nav-extended">
+    <div class="nav-background">
+      <div class="pattern active"
+        style="background-image: url('/Develop/public/images/istockphoto-614844110-612x612.jpg');"></div>
+    </div>
+    <div class="nav-wrapper container">
+      <!-- <a href="#"><img src="/Develop/public/images/Green_Vintage_Food_Drink_Badge_Logo.png" alt="Logo"></a> -->
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <!-- Navbar content goes here -->
+      </ul>
+      <div class="nav-wrapper container">
+        <!-- Nav tabs -->
+        <ul class="tabs">
+          <li class="tab"><a href="#my-cookbook">My Cookbook</a></li>
+          <li class="tab"><a href="#about">About</a></li>
+          <li class="tab"><a href="/Develop/public/html/faq.html">FAQ</a></li>
+          <li class="tab"><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Login form -->
+      <form id="login-form" class="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+
+
+    </div>
+
+
+    <!-- Welcome message displayed after successful login -->
+    <div id="welcome-message"></div>
+
+
+    <!-- Content sections -->
+    <div id="my-cookbook">
+      <!-- My cookbook content goes here -->
+    </div>
+
+
+    <div id="about">
+      <!-- About content goes here -->
+    </div>
+
+
+    <div id="faq">
+      <!-- FAQ content goes here -->
+    </div>
+
+
+    <div id="contact-us">
+      <!-- Fullscreen Header content goes here -->
+    </div>
+
+
+    <div class="nav-header center">
+      <a href="#"><img src="/Develop/public/images/Green_Vintage_Food_Drink_Badge_Logo.png" alt="Logo"></a>
+    </div>
+    </div>
+  </nav>
+
+
+  <!-- Gallery -->
+  <div id="portfolio" class="section gray">
+    <div class="container">
+      <div class="card">
+        <div id="card-title"></div>
+        <p id="card-description"></p>
+        <h1>Recipe Generator</h1>
+        <button id="generateRecipeBtn">Permu-Tate!</button>
+        <div id="recipeContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer style="background-color: #ba68c8; padding: 20px;">
+    <p>&copy; Permu-Tater 2023 | A love of adventure in the kitchen!</p>
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>
+      Designed and developed with <i style="color: red" class="fas fa-heart"></i> | &copy; Permu-Tater
+      2023
+    </p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="./js/generateRecipe.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+
+
+  <script src="/Develop/public/js/login.js"></script>
+  <script src="/Develop/public/js/generateRecipe.js"></script>
+  <script src="/Develop/public/js/profile.js"></script>
+</body>
+
+
+</html>
