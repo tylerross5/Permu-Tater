@@ -95,7 +95,7 @@
 
     <!--Connect With Us-->
     <div class="form-container">
-        <h2>Connect with us</h2>
+        <h4>&#10024;Connect with us&#10024;</h4>
         <div class="form-group">
             <label for="name-input">Name</label>
             <input type="text" id="name-input" required />
@@ -106,7 +106,7 @@
         </div>
         <div class="form-group">
             <label for="comment-input">Message:</label>
-            <textarea id="comment-input" required></textarea>
+            <textarea id="comment-input" class="wider-textarea" required></textarea>
         </div>
         <div class="form-group">
             <input type="checkbox" id="create-account-checkbox" />
@@ -114,15 +114,18 @@
                 updates</label>
         </div>
         <button type="submit">Send message</button>
+        <div id="confirmation-msg" style="display: none">
+            Your message has been sent!
+          </div>
     </div>
 
     <!-- Footer section -->
     <footer style="background-color: #ba68c8; padding: 20px;">
         <p>&copy; Permu-Tater 2023 | A love of adventure in the kitchen!</p>
         <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
         </div>
         <p>
             Designed and developed with <i style="color: red" class="fas fa-heart"></i> | &copy; Permu-Tater
@@ -135,3 +138,4 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
     <script src="/Develop/public/js/login.js"></script>
     <script src="/Develop/public/js/generateRecipe.js"></script>
+    <script src="/Develop/public/js/connectWithUs.js"></script>
