@@ -40,3 +40,18 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`Server running on port ${PORT}`);
   });
 });
+
+// Set up routes for login and logout
+app.get('/', (req, res) => {
+  res.render('login');
+});
+
+app.post('/login', (req, res) => {
+  // Handle login logic here
+  res.send('Login successful!');
+});
+
+app.post('/logout', (req, res) => {
+  // Handle logout logic here
+  res.send('Logout successful!');
+});
