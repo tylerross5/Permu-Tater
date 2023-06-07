@@ -4,17 +4,16 @@ const addNewRecipe= async (event) => {
     const name= document.querySelector('#recipe-idMeal').value.trim();
     const type= document.querySelector('recipes-Category');
     const instructions=document.querySelector('recipes-Instructions');
-    const picture= document.querySelector('recipes-MealThumb');
 
-    if(name && type && instructions && picture){
-        const response = await fetch('/api/recipes', {
+    if(name && type && instructions ){
+        const response = await fetch('/controllers/recipeRoute', {
             method:'POST',
-            body:JSON.stringify({name, type, instrcutions, picture}),
+            body:JSON.stringify({name, type, instrcutions}),
         });
         if (response.ok){
             document.location.replace('/profile');
         } else{
-            alert("Could not create recipe");
+            alert("Not able to create recipe");
         }
     }
 };
@@ -23,13 +22,13 @@ const deleteRecipe = async (event) =>{
     if (event.target.hasattribute('data-id')) {
         const id = event.target.getAttribute('data-id');
 
-        const response=await fetch(`/api/projects/${id}`, {
+        const response= await fetch(`/controllers/recipeRoute/${id}`, {
             method:'DELETE'
         });
         if (response.ok){
             document.location.replace('/profile');
         } else{
-            alert('Could not delete project');
+            alert('Not able to delete recipe');
         }
     }
 };
