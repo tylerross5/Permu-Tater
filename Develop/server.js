@@ -40,3 +40,31 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`Server running on port ${PORT}`);
   });
 });
+
+// Set up routes for login and logout
+app.get('/', (req, res) => {
+  res.render('login');
+});
+
+app.post('/login', (req, res) => {
+  // Handle login logic here
+  res.send('Login successful!');
+});
+
+app.post('/logout', (req, res) => {
+  // Handle logout logic here
+  res.send('Logout successful!');
+});
+
+
+app.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
+app.post('/signup', (req, res) => {
+  // Handle signup logic here
+  const { username, password } = req.body;
+  // Process the submitted data, e.g., save it to a database
+
+  res.send('Signup successful!');
+});
