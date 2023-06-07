@@ -72,13 +72,8 @@ router.get('/recipe', (req, res) => {
 
 router.get('/recipes', async (req, res) => {
   try {
-    
     // Make a request to the themealdb, retrieving random recipe data
     const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
-
-    // Log the API response for debugging
-    console.log('API response:', response.data);
-
 
     // Parse the JSON response and extract the necessary information
     const recipe = response.data.meals[0];
@@ -105,10 +100,10 @@ router.get('/recipes', async (req, res) => {
       }
     }
 
-    // Log the extracted ingredients for debugging
-    console.log('Extracted ingredients:', ingredients);
+    // Replace ingredients with random alternatives
+    const replacedIngredients = permuTate(recipeIngredients);
 
-    // Create a new recipe object
+    // Create a new recipe object with the replaced ingredients
     const newRecipe = {
       idMeal,
       strMeal,
@@ -118,7 +113,7 @@ router.get('/recipes', async (req, res) => {
       strMealThumb,
       strTags,
       strYoutube,
-      ingredients: JSON.stringify(recipeIngredients) // Convert ingredients array to a JSON string
+      ingredients: JSON.stringify(replacedIngredients) // Convert ingredients array to a JSON string
     };
 
     // Save the recipe to the MySQL database using Sequelize
