@@ -1,4 +1,4 @@
- const router = require('express').Router();
+ const Router = require('express').Router();
  const { User } = require('../models');
  const withAuth= require('../utils/authentication');
 
@@ -26,4 +26,4 @@
     res.render('login')
  });
  
- module.exports=router ;
+ module.exports= Router;
