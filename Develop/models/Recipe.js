@@ -1,9 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Recipes extends model{
-  
-}
 const Recipes = sequelize.define('Recipes', {
   idMeal: {
     type: DataTypes.STRING,
