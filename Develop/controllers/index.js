@@ -6,7 +6,7 @@ const recipeRoute = require('./recipeRoute');
 
 
 router.use('/', homepageRoutes);
-router.use('/recipe', recipeRoute); //button should hit /recipe
+router.use('/', recipeRoute); //button should hit /recipe
 router.use('/user', userRoutes);
 
 module.exports = router;
