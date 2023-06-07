@@ -28,16 +28,22 @@ $(document).ready(function() {
           instructionsList += '</ol>';
 
           $('#recipeContainer').html(`
-            <h2>${data.strMeal}</h2> 
-            <img src="${data.strMealThumb}" alt="${data.strMeal}"> 
-            <p>Category: ${data.strCategory}</p>
-            <p>Area: ${data.strArea}</p>
-            <h3>Instructions:</h3>
+            <h4 style="text-align: center !important;">${data.strMeal}</h4> 
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="${data.strMealThumb}" alt="${data.strMeal}"> 
+            <p style="text-align: center !important;">
+              <span style="font-weight: bold;">Category: </span>${data.strCategory}
+            </p>
+            <p style="text-align: center !important;">
+              <span style="font-weight: bold;">Area: </span>${data.strArea}
+            </p>
+            <h5 style="text-align: center !important; text-decoration: underline;">Instructions</h5>
             ${instructionsList}
-            <h3>Ingredients:</h3>
-            ${ingredientsList} 
-            <p>Tags: ${data.strTags}</p>
-            <p>YouTube Video: <a href="${data.strYoutube}" target="_blank">${data.strMeal}</a></p>
+            <h5 style="text-align: center !important; text-decoration: underline;">Ingredients</h5>
+            <div style="display: block; margin-left: auto; margin-right: auto;"">
+              ${ingredientsList} 
+            </div>
+            <p style="text-align: center !important;">Tags: ${data.strTags}</p>
+            <p style="text-align: center !important;">YouTube Video: <a href="${data.strYoutube}" target="_blank">${data.strMeal}</a></p>
           `);
         }, 
         error: function(error) {
