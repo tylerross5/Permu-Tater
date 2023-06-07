@@ -35,9 +35,9 @@ To use Permu-Tater, please follow the following steps:
 6. If you wish to save the recipe you rendered, you will have to ceate an account by going to the Login option at the top right corner of the Navigation bar.
 
 ![Homepage](./Develop/public/images/HomePage.png)
-![Rendered Recipe - Top Half](./Develop/public/images/Top Half Of Recipe.png)
-![Rendered Recipe - Top Half](./Develop/public/images/Second Half of Recipe.png)
-![Contact Us](./Develop/public/images/Contact Us.png)
+![Rendered Recipe - Top Half](./Develop/public/images/Top-Half-Of-Recipe.png)
+![Rendered Recipe - Top Half](./Develop/public/images/Second-Half-of-Recipe.png)
+![Contact Us](./Develop/public/images/Contact-Us.png)
 
 ## Features
 
