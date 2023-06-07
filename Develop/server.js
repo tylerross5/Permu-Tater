@@ -55,3 +55,16 @@ app.post('/logout', (req, res) => {
   // Handle logout logic here
   res.send('Logout successful!');
 });
+
+
+app.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
+app.post('/signup', (req, res) => {
+  // Handle signup logic here
+  const { username, password } = req.body;
+  // Process the submitted data, e.g., save it to a database
+
+  res.send('Signup successful!');
+});
