@@ -3,7 +3,7 @@
 		{
 			"idIngredient": "1",
 			"strIngredient": "Chicken",
-			"ingType": "Meat"
+			"ingType": "Chicken"
 		},
 		{
 			"idIngredient": "2",
@@ -13,12 +13,12 @@
 		{
 			"idIngredient": "3",
 			"strIngredient": "Beef",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "4",
 			"strIngredient": "Pork",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "5",
@@ -48,7 +48,7 @@
 		{
 			"idIngredient": "14",
 			"strIngredient": "Bacon",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "15",
@@ -88,12 +88,12 @@
 		{
 			"idIngredient": "23",
 			"strIngredient": "Beef Brisket",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "24",
 			"strIngredient": "Beef Fillet",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "25",
@@ -283,27 +283,27 @@
 		{
 			"idIngredient": "65",
 			"strIngredient": "Chicken Breast",
-			"ingType": "Meat"
+			"ingType": "Chicken"
 		},
 		{
 			"idIngredient": "66",
 			"strIngredient": "Chicken Breasts",
-			"ingType": "Meat"
+			"ingType": "Chicken"
 		},
 		{
 			"idIngredient": "67",
 			"strIngredient": "Chicken Legs",
-			"ingType": "Meat"
+			"ingType": "Chicken"
 		},
 		{
 			"idIngredient": "68",
 			"strIngredient": "Chicken Stock",
-			"ingType": "Stock"
+			"ingType": "Chicken"
 		},
 		{
 			"idIngredient": "70",
 			"strIngredient": "Chicken Thighs",
-			"ingType": "Meat"
+			"ingType": "Chicken"
 		},
 		{
 			"idIngredient": "71",
@@ -358,7 +358,7 @@
 		{
 			"idIngredient": "81",
 			"strIngredient": "Chorizo",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "82",
@@ -438,7 +438,7 @@
 		{
 			"idIngredient": "98",
 			"strIngredient": "Corn Tortillas",
-			"ingType": "Bread"
+			"ingType": "Tortillas"
 		},
 		{
 			"idIngredient": "99",
@@ -518,7 +518,7 @@
 		{
 			"idIngredient": "114",
 			"strIngredient": "Doner Meat",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "115",
@@ -628,7 +628,7 @@
 		{
 			"idIngredient": "138",
 			"strIngredient": "Flour Tortilla",
-			"ingType": "Bread"
+			"ingType": "Tortillas"
 		},
 		{
 			"idIngredient": "139",
@@ -798,7 +798,7 @@
 		{
 			"idIngredient": "173",
 			"strIngredient": "Hard Taco Shells",
-			"ingType": "Bread"
+			"ingType": "Tortillas"
 		},
 		{
 			"idIngredient": "175",
@@ -853,7 +853,7 @@
 		{
 			"idIngredient": "185",
 			"strIngredient": "Jasmine Rice",
-			"ingType": "Grain"
+			"ingType": "Rice"
 		},
 		{
 			"idIngredient": "186",
@@ -868,7 +868,7 @@
 		{
 			"idIngredient": "188",
 			"strIngredient": "Khus Khus",
-			"ingType": "Nut"
+			"ingType": "Seeds"
 		},
 		{
 			"idIngredient": "189",
@@ -883,17 +883,17 @@
 		{
 			"idIngredient": "191",
 			"strIngredient": "Lamb",
-			"ingType": "Meat"
+			"ingType": "lamb"
 		},
 		{
 			"idIngredient": "192",
 			"strIngredient": "Lamb Loin Chops",
-			"ingType": "Meat"
+			"ingType": "Lamb"
 		},
 		{
 			"idIngredient": "193",
 			"strIngredient": "Lamb Mince",
-			"ingType": "Meat"
+			"ingType": "Lamb"
 		},
 		{
 			"idIngredient": "194",
@@ -903,7 +903,7 @@
 		{
 			"idIngredient": "195",
 			"strIngredient": "Lean Minced Beef",
-			"ingType": "Meat"
+			"ingType": "Lamb"
 		},
 		{
 			"idIngredient": "196",
@@ -1088,7 +1088,7 @@
 		{
 			"idIngredient": "233",
 			"strIngredient": "Parma Ham",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "234",
@@ -1503,7 +1503,7 @@
 		{
 			"idIngredient": "325",
 			"strIngredient": "Veal",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "326",
@@ -1773,12 +1773,12 @@
 		{
 			"idIngredient": "380",
 			"strIngredient": "Lamb Leg",
-			"ingType": "Meat"
+			"ingType": "lamb"
 		},
 		{
 			"idIngredient": "381",
 			"strIngredient": "Lamb Shoulder",
-			"ingType": "Meat"
+			"ingType": "lamb"
 		},
 		{
 			"idIngredient": "382",
@@ -1798,12 +1798,12 @@
 		{
 			"idIngredient": "387",
 			"strIngredient": "Minced Beef",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "388",
 			"strIngredient": "Turkey Mince",
-			"ingType": "Meat"
+			"ingType": "Turkey"
 		},
 		{
 			"idIngredient": "389",
@@ -2093,7 +2093,7 @@
 		{
 			"idIngredient": "448",
 			"strIngredient": "Ham",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "449",
@@ -2273,7 +2273,7 @@
 		{
 			"idIngredient": "484",
 			"strIngredient": "Beef Shin",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "485",
@@ -2303,7 +2303,7 @@
 		{
 			"idIngredient": "490",
 			"strIngredient": "Prosciutto",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "491",
@@ -2363,7 +2363,7 @@
 		{
 			"idIngredient": "502",
 			"strIngredient": "Minced Pork",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "503",
@@ -2413,7 +2413,7 @@
 		{
 			"idIngredient": "512",
 			"strIngredient": "Ground Beef",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "513",
@@ -2598,7 +2598,7 @@
 		{
 			"idIngredient": "552",
 			"strIngredient": "Tripe",
-			"ingType": "Meat"
+			"ingType": "Beef"
 		},
 		{
 			"idIngredient": "553",
@@ -2653,7 +2653,7 @@
 		{
 			"idIngredient": "564",
 			"strIngredient": "Mincemeat",
-			"ingType": "Preserve"
+			"ingType": "Meat"
 		},
 		{
 			"idIngredient": "565",
@@ -2678,12 +2678,12 @@
 		{
 			"idIngredient": "569",
 			"strIngredient": "Ground Pork",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "570",
 			"strIngredient": "Pork Chops",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "571",
@@ -2798,12 +2798,12 @@
 		{
 			"idIngredient": "594",
 			"strIngredient": "Kielbasa",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "595",
 			"strIngredient": "Polish Sausage",
-			"ingType": "Meat"
+			"ingType": "Pork"
 		},
 		{
 			"idIngredient": "596",
