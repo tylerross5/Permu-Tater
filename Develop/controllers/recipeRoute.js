@@ -100,7 +100,8 @@ router.get('/recipes', async (req, res) => {
       }
     }
 
-    // Replace ingredients with random alternatives
+     // Here we call the permuTate function
+    // so we can replace the incoming ingredients
     const replacedIngredients = permuTate(recipeIngredients);
 
     // Create a new recipe object with the replaced ingredients
