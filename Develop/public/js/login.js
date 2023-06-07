@@ -1,25 +1,21 @@
+// This will display a message saying "Welcome!" if the email is "example@example.com"
+// and the password is "password", and display a message saying "Incorrect email or password." otherwise.
 
-const loginFormHandler = async (event) => {
-    event.preventDefault();
-  
-    const email = document.querySelector('#email-login').value.trim();
-    const password = document.querySelector('#password-login').value.trim();
-  
-    if (email && password) {
-      const response = await fetch('/api/users/login', {
-        method: 'POST',
-        body: JSON.stringify({ email, password }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
-      if (response.ok) {
-        document.location.replace('/');
-      } else {
-        alert('Failed to log in');
-      }
-    }
-  };
-  
-  document
-    .querySelector('.login-form')
-    .addEventListener('submit', loginFormHandler);
+const loginForm = document.getElementById("login-form");
+
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const email = document.getElementById("email-input").value;
+  const password = document.getElementById("password-input").value;
+
+  if (email === "example@example.com" && password === "password") {
+    alert("Welcome!");
+  } else {
+    alert("Incorrect email or password.");
+  }
+  // Refresh the page after 1 seconds
+  setTimeout(function () {
+    location.reload();
+  }, 1000);
+});
