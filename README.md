@@ -6,7 +6,7 @@ This webpage provides an interactive platform for finding interesting recipes ta
 
 ## Installation
 
-To use Permu-Tater, simply navigate to (Link)
+To use Permu-Tater, simply navigate to (https://permu-tater.herokuapp.com/)
 
 ## Building Blocks
 
